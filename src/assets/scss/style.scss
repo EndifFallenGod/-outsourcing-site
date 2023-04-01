@@ -37,3 +37,55 @@
     line-height: 22px;
   }
 }
+
+.section {
+  padding: 100px 0;
+  position: relative;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    line-height: 1.6;
+  }
+
+  &__title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 10px auto 70px;
+
+    background-color: #4E4E56;
+    border-radius: 8px;
+  }
+
+  &__background {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+  }
+
+  &__image {
+    display: block;
+    max-width: 470px;
+    height: auto;
+  }
+}
+
+.about {
+  padding: 0 120px;
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+
+    color: #767070;
+
+    margin-bottom: 30px;
+  }
+}
