@@ -1,0 +1,41 @@
+.services {
+  padding-bottom: 100px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #3c3434;
+    padding-bottom: 10px;
+  }
+
+  &__item-image {
+    padding-bottom: 25px;
+  }
+
+  &__item-info {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #767070;
+    padding-bottom: 25px;
+  }
+
+  &__item-more {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c08283;
+    margin-top: auto;
+  }
+}
