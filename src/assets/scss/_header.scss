@@ -1,0 +1,38 @@
+.menu {
+  padding-right: 15px;
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    // padding-right: 45px;
+    padding-left: 60px;
+  }
+  &__list-link {
+    @extend %title-font;
+    color: #f4f4f4;
+    line-height: 22px;
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: #c08283;
+  &__inner {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+}
