@@ -8,10 +8,37 @@
         </div>
       </div>
       <div class="offer__btn">
-        <button class="offer__btn-offer">
+        <button class="offer__btn-offer" onclick="document.getElementById('modalDialog').style.display = 'block';">
           <i class="icon-mail"></i>ваш запрос
         </button>
       </div>
     </div>
   </div>
 </section>
+
+<div id="modalDialog" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Оставить заявку</h3>
+        <button
+          onclick="document.getElementById('modalDialog').style.display = 'none';"
+          class="close"
+        >
+          ×
+        </button>
+      </div>
+      <section class="work">
+        <div class="work__container">
+          <form class="work__form" action="/" method="post">
+            <input class="work__form-input" type="text" name="name" placeholder="Ваше имя *">
+            <input class="work__form-input" type="tel" name="tel" placeholder="Ваш телефон *">
+            <textarea class="work__form-textarea" name="text"></textarea>
+            <button class="work__form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+</div>
