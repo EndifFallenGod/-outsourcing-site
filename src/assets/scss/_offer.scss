@@ -1,0 +1,120 @@
+.offer {
+  background-color: #c08283;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 0 48px 0;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f4f4f4;
+  }
+
+  &__title-suptitle {
+    font-size: 36px;
+  }
+
+  &__title-subtitle {
+    font-size: 22px;
+  }
+
+  // &__offer__btn
+
+  &__btn-offer {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #3c3434;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
+
+.icon-mail {
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &-content {
+    background-color: #c08283;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 20px;
+    width: 25%; /* Could be more or less, depending on screen size */
+  }
+
+  &-header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #f4f4f4;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    vertical-align: middle;
+  }
+}
+
+.work {
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-input {
+    max-width: 370px;
+    width: 100%;
+    height: 40px;
+    padding: 6px 20px;
+
+    color: #4E4E56;
+    background-color: #F4F4F4;
+    border: 1px solid #767070;
+    border-radius: 20px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-right: 10px;
+  }
+}
+
+.close {
+  font-size: 24px;
+  
+  color: #f4f4f4;
+  border: 0;
+  background: none;
+}
+
+.close:hover,
+.close:focus {
+  color: #4E4E56;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
