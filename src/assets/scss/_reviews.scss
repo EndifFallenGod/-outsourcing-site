@@ -1,0 +1,84 @@
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 150px;
+
+  &__item {
+    max-width: 360px;
+    // height: 442px;
+    padding: 0 21px 0 21px;
+  }
+
+  &__inner {
+    background-color: #f4f4f4;
+    height: 442px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__quotes {
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4e4e56;
+  }
+
+  &__autor {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4e4e56;
+  }
+
+  &__span {
+    color: #c08283;
+  }
+}
+
+.slick-slider {
+  padding: 0 60px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+
+  transform: translateY(-40%);
+
+  display: block;
+  font-size: 0;
+  color: transparent;
+
+  border: 0;
+  background: none;
+
+  cursor: pointer;
+}
+
+.slick-arrow:focus {
+  outline: 0;
+}
+
+.slick-arrow::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid #373737;
+  border-left: 2px solid #373737;
+}
+.slick-prev {
+  left: 20px;
+  transform: rotate(-45deg);
+}
+
+.slick-next {
+  right: 20px;
+  transform: rotate(135deg);
+}
