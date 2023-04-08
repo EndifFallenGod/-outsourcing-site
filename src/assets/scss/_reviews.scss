@@ -3,7 +3,7 @@
   padding-bottom: 150px;
 
   &__item {
-    max-width: 360px;
+    // max-width: 360px;
     // height: 442px;
     padding: 0 21px 0 21px;
   }
@@ -81,4 +81,18 @@
 .slick-next {
   right: 20px;
   transform: rotate(135deg);
+}
+
+@media screen and (max-width: 1200px) {
+  // .reviews {
+  //   &__item {
+  //     width: 500px;
+  //     // height: 442px;
+  //     padding: 0 21px 0 21px;
+  //   }
+
+  //   &__slider {
+  //     max-width: 1100px;
+  //   }
+  // }
 }

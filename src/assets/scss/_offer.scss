@@ -92,10 +92,11 @@
     padding: 6px 20px;
     margin-bottom: 20px;
 
-    color: #4E4E56;
-    background-color: #F4F4F4;
-    border: 1px solid #767070;
+    color: #4e4e56;
+    background-color: #f4f4f4;
+    // border: 1px solid #767070;
     border-radius: 20px;
+    border: none;
 
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -105,6 +106,7 @@
   &__form-textarea {
     min-height: 40px;
     resize: vertical;
+    border: none;
   }
 
   &__form-input::placeholder {
@@ -112,41 +114,41 @@
   }
 
   &__form-input:focus {
-      outline: 0;
-      border-color: #4E4E56;
+    outline: 0;
+    border-color: #4e4e56;
   }
 
   &__form-button {
-      width: 100%;
-      height: 40px;
-      padding: 6px auto;
+    width: 100%;
+    height: 40px;
+    padding: 6px auto;
 
-      color: #F4F4F4;
-      background-color: #4E4E56;
+    color: #f4f4f4;
+    background-color: #4e4e56;
 
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 
-      border: 0;
-      border-radius: 20px;
-      cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
 
-      transition: background .2s linear;
+    transition: background 0.2s linear;
   }
 
   &__form-button:hover {
-      background-color: #767070;
+    background-color: #767070;
   }
 
   &__form-button:focus {
-      outline: 0;
+    outline: 0;
   }
 }
 
 .close {
   font-size: 24px;
-  
+
   color: #f4f4f4;
   border: 0;
   background: none;
@@ -154,7 +156,7 @@
 
 .close:hover,
 .close:focus {
-  color: #4E4E56;
+  color: #4e4e56;
   text-decoration: none;
   cursor: pointer;
   outline: 0;

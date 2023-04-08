@@ -24,7 +24,7 @@
     border-radius: 15px;
     background-color: #ebeaea;
     height: 7px;
-    width: 1100px;
+    max-width: 1100px;
     margin-bottom: 20px;
   }
   &__title-subtitle {
@@ -40,5 +40,25 @@
 .arrow-down {
   position: absolute;
   bottom: 2%;
-  right: 50%;
+  right: 48%;
+  transform: translateX(-48%);
+}
+
+@media screen and (max-width: 1200px) {
+  .intro {
+    &__title-suptitle {
+      font-size: 60px;
+    }
+    &__title-band {
+      margin: 0 auto;
+      border-radius: 15px;
+      background-color: #ebeaea;
+      height: 7px;
+      max-width: 900px;
+      margin-bottom: 20px;
+    }
+    &__title-subtitle {
+      font-size: 20px;
+    }
+  }
 }
