@@ -15,7 +15,7 @@
     position: relative;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 4.5rem;
     text-transform: uppercase;
     color: #ebeaea;
     padding-bottom: 30px;
@@ -31,7 +31,7 @@
   &__title-subtitle {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: #ebeaea;
   }
@@ -52,13 +52,13 @@
 @media screen and (max-width: 1200px) {
   .intro {
     &__title-suptitle {
-      font-size: 60px;
+      font-size: 3.75rem;
     }
     &__title-band {
       margin: 0 auto;
-      border-radius: 15px;
+      border-radius: 0.9375rem;
       background-color: #ebeaea;
-      height: 7px;
+      height: 5px;
       max-width: 900px;
       margin-bottom: 20px;
     }
