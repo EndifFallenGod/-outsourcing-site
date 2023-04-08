@@ -8,7 +8,10 @@
         </div>
       </div>
       <div class="offer__btn">
-        <button class="offer__btn-offer" onclick="document.getElementById('modalDialog').style.display = 'block';">
+        <button
+          class="offer__btn-offer"
+          onclick="document.getElementById('modalDialog').style.display = 'block';"
+        >
           <i class="icon-mail"></i>ваш запрос
         </button>
       </div>
@@ -31,14 +34,41 @@
       <section class="work">
         <div class="work__container">
           <form class="work__form" action="/" method="post">
-            <input class="work__form-input" type="text" name="name" placeholder="Ваше имя *" required>
-            <input class="work__form-input" type="tel" name="tel" placeholder="Ваш телефон *" required>
-            <textarea class="work__form-input work__form-textarea" name="text" placeholder="Ваши пожелания"></textarea>
+            <input
+              class="work__form-input"
+              type="text"
+              name="name"
+              placeholder="Ваше имя *"
+              required
+            />
+            <input
+              class="work__form-input"
+              type="tel"
+              name="tel"
+              placeholder="Ваш телефон *"
+              required
+            />
+            <textarea
+              class="work__form-input work__form-textarea"
+              name="text"
+              placeholder="Ваши пожелания"
+            ></textarea>
+            <div class="work__form-agreement">
+              <input
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+                required
+              />
+              <label for="agreement"
+                >Я согласен(-на) на обработку
+                <a href="#">персональных данных</a></label
+              >
+            </div>
             <button class="work__form-button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
     </div>
   </div>
-  
 </div>
