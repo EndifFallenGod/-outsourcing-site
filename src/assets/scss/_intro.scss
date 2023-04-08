@@ -1,17 +1,18 @@
 .intro {
-  position: relative;
   background: linear-gradient(rgba(41, 41, 41, 0.4), rgba(41, 41, 41, 0.4)),
     url("/assets/images/background.png") center no-repeat;
 
   background-size: cover;
-  height: 100vh;
+  height: 93vh;
   padding-bottom: 100px;
+  margin-top: 70px;
 
   &__title {
     text-align: center;
     padding-top: 25%;
   }
   &__title-suptitle {
+    position: relative;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 72px;
@@ -31,17 +32,21 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 24px;
-    // letter-spacing: 2px;
     text-transform: uppercase;
     color: #ebeaea;
   }
 }
 
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+
 .arrow-down {
-  position: absolute;
-  bottom: 2%;
-  right: 48%;
-  transform: translateX(-48%);
+  width: 30px;
 }
 
 @media screen and (max-width: 1200px) {

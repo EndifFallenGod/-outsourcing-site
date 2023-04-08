@@ -1,11 +1,13 @@
 .menu {
-  padding-right: 15px;
+  // padding-right: 15px;
   &__list {
     display: flex;
+    justify-content: space-around;
   }
   &__list-item {
-    // padding-right: 45px;
-    padding-left: 60px;
+    width: 200px;
+    padding: 0 15px 0 15px;
+    text-align: center;
   }
   &__list-link {
     @extend %title-font;
@@ -18,6 +20,7 @@
   position: fixed;
   z-index: 1000;
   width: 100%;
+
   background-color: #c08283;
   &__inner {
     height: 70px;
