@@ -40,9 +40,20 @@
 }
 
 @media screen and (max-width: 1200px) {
+  // .about {
+  //   // &__text {
+  //   //   font-size: 18px;
+  //   // }
+  // }
+}
+
+@media screen and (max-width: 768px) {
   .about {
     &__text {
       font-size: 1.125rem;
+
+    &__inner {
+      padding: 0 20px;
     }
   }
 }

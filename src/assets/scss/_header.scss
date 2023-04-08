@@ -49,3 +49,23 @@
   max-width: 128px;
   max-height: 128px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    &__list-item {
+      width: 120px;
+      padding: 0 10px 0 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    &__list-item {
+      width: 100px;
+      padding: 0 10px 0 10px;
+    }
+  }
+}
+

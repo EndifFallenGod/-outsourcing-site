@@ -18,5 +18,15 @@ $(".reviews__slider").slick({
         infiniteL: true,
       },
     },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infiniteL: true,
+      },
+    },
   ],
 });

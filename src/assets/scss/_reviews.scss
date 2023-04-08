@@ -10,7 +10,7 @@
 
   &__inner {
     background-color: #f4f4f4;
-    height: 442px;
+    // max-height: 600px;
     padding: 20px;
     margin-bottom: 15px;
   }
@@ -22,15 +22,16 @@
   &__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #4e4e56;
+    // padding-bottom: 50px;
   }
 
   &__autor {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #4e4e56;
   }
 
