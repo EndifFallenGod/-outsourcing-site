@@ -35,11 +35,25 @@
 
   &__item-more {
     width: fit-content;
-    
+
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #c08283;
     margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .services {
+    &__inner {
+      // flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__item {
+      padding-bottom: 30px;
+    }
   }
 }
