@@ -11,6 +11,7 @@
     max-width: 384px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   &__item-title {
@@ -34,13 +35,19 @@
   }
 
   &__item-more {
-    width: fit-content;
+    // width: fit-content;
 
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #c08283;
     margin-top: auto;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }
 
@@ -54,6 +61,14 @@
 
     &__item {
       padding-bottom: 30px;
+    }
+
+    &__item-more {
+      text-align: center;
+    }
+
+    &__item-link {
+      margin: 0 auto;
     }
   }
 }
