@@ -30,3 +30,19 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 1850px) {
+  .about {
+    &__background {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
