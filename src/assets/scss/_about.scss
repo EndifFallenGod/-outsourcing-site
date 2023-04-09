@@ -51,10 +51,9 @@
   .about {
     &__text {
       font-size: 1.125rem;
-
-      &__inner {
-        padding: 0 20px;
-      }
+    }
+    &__inner {
+      padding: 0 20px;
     }
   }
 }
