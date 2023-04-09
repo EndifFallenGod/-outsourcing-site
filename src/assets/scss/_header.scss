@@ -50,7 +50,6 @@
   max-height: 128px;
 }
 
-
 @media screen and (max-width: 1200px) {
   .menu {
     &__list-item {
@@ -63,9 +62,8 @@
 @media screen and (max-width: 768px) {
   .menu {
     &__list-item {
-      width: 100px;
+      width: 120px;
       padding: 0 10px 0 10px;
     }
   }
 }
-
