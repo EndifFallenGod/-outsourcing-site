@@ -267,7 +267,7 @@ a {
 }
 
 .intro {
-    background: linear-gradient(rgba(41, 41, 41, 0.4), rgba(41, 41, 41, 0.4)), url("/assets/images/background.png") center no-repeat;
+    background: linear-gradient(rgba(41, 41, 41, 0.4), rgba(41, 41, 41, 0.4)), url("./assets/images/background.png") center no-repeat;
     background-size: cover;
     height: 93vh;
     padding-bottom: 100px;
