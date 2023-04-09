@@ -1,6 +1,5 @@
 $(function() {
     let header = $('#header');
-    let introHeight = $('#intro').innerHeight();
 
     $('[data-scroll]').on('click', function(event) {
         event.preventDefault();
@@ -8,6 +7,9 @@ $(function() {
         let $this = $(this);
         let blockId = $this.data('scroll');
         let blockOffset = $(blockId).offset().top;
+
+        $('#nav-toggle').toggleClass('active');
+        $('.menu').toggleClass('active');
 
         $('html, body').animate({
             scrollTop: blockOffset - header.innerHeight()

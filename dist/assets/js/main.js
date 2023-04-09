@@ -32,7 +32,6 @@ $(".reviews__slider").slick({
 });
 $(function() {
     let header = $('#header');
-    let introHeight = $('#intro').innerHeight();
 
     $('[data-scroll]').on('click', function(event) {
         event.preventDefault();
@@ -41,8 +40,19 @@ $(function() {
         let blockId = $this.data('scroll');
         let blockOffset = $(blockId).offset().top;
 
+        $('#nav-toggle').toggleClass('active');
+        $('.menu').toggleClass('active');
+
         $('html, body').animate({
             scrollTop: blockOffset - header.innerHeight()
         }, 500);
+    });
+});
+$(function() {
+    $('#nav-toggle').on('click', function(event) {
+        event.preventDefault();
+    
+        $(this).toggleClass('active');
+        $('.menu').toggleClass('active');
     });
 });

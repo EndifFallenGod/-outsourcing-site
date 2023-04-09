@@ -3,6 +3,7 @@
   &__list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   &__list-item {
     width: 200px;
@@ -40,14 +41,99 @@
 
 .logo {
   margin: 0 auto;
+
+  img {
+    width: 48px;
+    height: 48px;
+
+    max-width: 128px;
+    max-height: 128px;
+  }
 }
 
-.logo img {
-  width: 48px;
-  height: 48px;
+.nav-toggle {
+  display: none;
 
-  max-width: 128px;
-  max-height: 128px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 1;
+
+  width: 30px;
+
+  padding: 10px 0;
+
+  font-size: 0;
+  color: transparent;
+  border: 0;
+  background: none;
+
+  cursor: pointer;
+
+  &__item {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    margin: auto;
+
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+
+    background-color: #fff;
+
+    transition: background 0.2s linear;
+  }
+
+  &__item::before,
+  &__item::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+
+    background-color: #fff;
+
+    transition: transform 0.2s linear;
+  }
+
+  &__item::before {
+    top: -8px;
+  }
+
+  &__item::after {
+    top: 8px;
+  }
+}
+
+.nav-toggle:focus {
+  outline: 0;
+}
+
+.nav-toggle.active .nav-toggle__item {
+  background: none;
+}
+
+.nav-toggle.active .nav-toggle__item::before {
+  transform-origin: left top;
+  transform: rotate(45deg) translate3d(0, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+  transform-origin: left bottom;
+  transform: rotate(-45deg) translate3d(0, 3px, 0);
 }
 
 @media screen and (max-width: 1200px) {
@@ -59,11 +145,49 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    &__list-item {
-      width: 120px;
-      padding: 0 10px 0 10px;
+@media screen and (max-width: 600px) {
+  .header {
+    &__inner {
+      height: auto;
+      margin-top: 70px;
+      flex-direction: column;
     }
   }
+  
+  .menu {
+    display: none;
+    width: 100%;
+
+    &__list {
+      display: block;
+
+      background-color: #c08283;
+    }
+
+    &__list-item {
+      width: 100%;
+      padding: 15px;
+      text-align: start;
+    }
+
+    &__list-link {
+      font-size: 1.25rem;
+    }
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+
+    top: 10px;
+    left: 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
 }

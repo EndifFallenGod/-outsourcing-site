@@ -204,6 +204,7 @@ a {
 .menu__list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .menu__list-item {
@@ -252,6 +253,76 @@ a {
     max-height: 128px;
 }
 
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 1;
+    width: 30px;
+    padding: 10px 0;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-toggle__item {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: background 0.2s linear;
+}
+
+.nav-toggle__item::before, .nav-toggle__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: transform 0.2s linear;
+}
+
+.nav-toggle__item::before {
+    top: -8px;
+}
+
+.nav-toggle__item::after {
+    top: 8px;
+}
+
+.nav-toggle:focus {
+    outline: 0;
+}
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+}
+
+.nav-toggle.active .nav-toggle__item::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0, 3px, 0);
+}
+
 @media screen and (max-width: 1200px) {
     .menu__list-item {
         width: 120px;
@@ -259,10 +330,45 @@ a {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .header__inner {
+        height: auto;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .menu__list {
+        display: block;
+        background-color: #c08283;
+    }
+
     .menu__list-item {
-        width: 120px;
-        padding: 0 10px 0 10px;
+        width: 100%;
+        padding: 15px;
+        text-align: start;
+    }
+
+    .menu__list-link {
+        font-size: 1.25rem;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+
+    .nav-toggle {
+        display: block;
     }
 }
 
@@ -379,7 +485,7 @@ a {
         font-size: 1.125rem;
     }
 
-    .about__text__inner {
+    .about__inner {
         padding: 0 20px;
     }
 }
@@ -786,6 +892,26 @@ a {
 .work__form-input:focus {
     outline: 0;
     border-color: #4e4e56;
+}
+
+.work__form-agreement {
+    background: none;
+    padding: 0;
+    display: flex;
+    color: #f4f4f4;
+    font-size: 0.9rem;
+}
+
+.work__form-agreement input {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    accent-color: #f4f4f4;
+}
+
+.work__form-agreement a {
+    color: #f4f4f4;
+    text-decoration: underline;
 }
 
 .work__form-button {

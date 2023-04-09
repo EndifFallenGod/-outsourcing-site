@@ -34,7 +34,7 @@
               </li>
             </ul>
           </nav>
-          <a href="#" class="logo" data-scroll="#intro">
+          <a href="/" class="logo">
             <img src="./assets/images/logo.svg" alt="logo" />
           </a>
           <nav class="menu">
@@ -51,6 +51,9 @@
               </li>
             </ul>
           </nav>
+          <button class="nav-toggle" id="nav-toggle" type="button">
+            <span class="nav-toggle__item">Меню</span>
+          </button>
         </div>
       </div>
     </header>
@@ -60,11 +63,11 @@
   <div class="container intro-container">
     <div class="intro__title">
       <h1 class="intro__title-suptitle">
-        найдем курьеров там,<br />где другие бессильны
+        найдем персонал там,<br />где другие бессильны
       </h1>
       <div class="intro__title-band"></div>
       <span class="intro__title-subtitle"
-        >организуем непрерывный поток курьеров на доставку
+        >организуем поиск персонала на любую работу
       </span>
     </div>
     <img src="./assets/images/Vector.png" alt="" class="arrow-down" />
@@ -216,7 +219,7 @@
           class="services__item-image"
         />
         <h3 class="services__item-title">
-          Подборка резюме по формальным требованиям
+          Подбор курьеров (пеший, авто, вело-курьер)
         </h3>
         <p class="services__item-info">
           Аутсорсинг курьеров - это эффективный инструмент, который уже стал
@@ -243,7 +246,7 @@
           class="services__item-image"
         />
         <h3 class="services__item-title">
-          Подборка резюме по формальным требованиям
+          Подбор неквалифицированного персонала
         </h3>
         <p class="services__item-info">
           Мы предлагаем услуги аутсорсинга по подбору неквалифицированного
@@ -480,7 +483,7 @@
               name="text"
               placeholder="Ваши пожелания"
             ></textarea>
-            <div class="work__form-agreement">
+            <div class="work__form-input work__form-agreement">
               <input type="checkbox" name="agreement" id="agreement" required />
               <label for="agreement"
                 >Я согласен(-на) на обработку

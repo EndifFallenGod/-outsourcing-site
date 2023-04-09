@@ -118,6 +118,29 @@
     border-color: #4e4e56;
   }
 
+  &__form-agreement {
+    background: none;
+    padding: 0;
+
+    display: flex;
+    color: #f4f4f4;
+
+    font-size: 0.9rem;
+  }
+
+  &__form-agreement input {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+    accent-color: #f4f4f4;
+  }
+
+  &__form-agreement a {
+    color: #f4f4f4;
+    text-decoration: underline;
+  }
+
   &__form-button {
     width: 100%;
     height: 40px;
