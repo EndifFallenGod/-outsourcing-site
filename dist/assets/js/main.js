@@ -40,8 +40,10 @@ $(function() {
         let blockId = $this.data('scroll');
         let blockOffset = $(blockId).offset().top;
 
-        $('#nav-toggle').toggleClass('active');
-        $('.menu').toggleClass('active');
+        if (!$this.hasClass('arrow-scroll')) {
+            $('#nav-toggle').toggleClass('active');
+            $('.menu').toggleClass('active');
+        }
 
         $('html, body').animate({
             scrollTop: blockOffset - header.innerHeight()
