@@ -4,9 +4,9 @@
 $(".reviews__slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  infiniteL: true,
+  autoplay: false,
+  autoplaySpeed: 3000,
+  infinite: true,
   responsive: [
     {
       breakpoint: 1200,
@@ -14,8 +14,8 @@ $(".reviews__slider").slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-        infiniteL: true,
+        autoplaySpeed: 3000,
+        infinite: true,
       },
     },
     {
@@ -24,8 +24,20 @@ $(".reviews__slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-        infiniteL: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 501,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        arrows: false,
       },
     },
   ],
