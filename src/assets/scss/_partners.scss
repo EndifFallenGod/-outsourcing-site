@@ -105,3 +105,15 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .partners {
+    padding-top: 0;
+
+    &__image {
+      max-width: 100%;
+      height: auto;
+      // padding: 20px 0;
+    }
+  }
+}
