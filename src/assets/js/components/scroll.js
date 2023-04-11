@@ -1,7 +1,10 @@
 $(function() {
     let header = $('#header');
+    let pathname = window.location.pathname;
 
     $('[data-scroll]').on('click', function(event) {
+        if (pathname !== '/' && pathname !== 'index.html') return 1;
+
         event.preventDefault();
 
         let $this = $(this);

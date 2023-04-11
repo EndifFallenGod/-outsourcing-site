@@ -9,12 +9,15 @@
       <main class="main">
         <section class="more">
           <div class="container" style="padding-top: 130px">
+            <h2 class="more__title title">{{title}}</h2>
             <div class="more__inner">
-              <h2 class="more__title title">{{ title}}</h2>
-              <h1>{{ info }}</h1>
+              <p class="about__text">
+                {{info}}
+              </p>
             </div>
           </div>
         </section>
+        {{>offer}}
       </main>
     </div>
     {{> footer}}
